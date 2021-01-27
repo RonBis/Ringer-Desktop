@@ -1,5 +1,5 @@
 # Ringer-Desktop
-Desktop version of my __hobby project__ :grinning:  __*Ringer*__ made with Electron
+Desktop version of my __hobby project__ :grinning:  __*Ringer*__  made with Electron
 
 :warning: **This repo is under construction**. :warning:
 
@@ -19,12 +19,12 @@ Desktop version of my __hobby project__ :grinning:  __*Ringer*__ made with Elect
 
 ## Some info
 There are three scripts defined in the __package.json__ file : 
-*   `webpack-dev-serevr-start` for testing mdc styles (Material Design Library) used in this app ui ; 
+*   `webpack-dev-server-start` for testing mdc styles (Material Design Library) used in this app ui ; 
 *   `webpack-build` for using the built `bundle.css` & `bundle.js` directly from the HTML markup. ; 
 *   `test-app` for running the app from npm.
 
 ## About the app
->**Ringer** is a *cross-platform* **(at least my target is that)** instant messaging app currently being built using some awesome open-source technologies.
+**Ringer** is a *cross-platform* **(at least my target is that)** instant messaging app currently being built using some awesome open-source technologies.
 
 <!-- ## How can you contribute ?
 I am a newbie in web development and have a great passion for exploring new technologies. So if anyone have any interest in my hobby project, you're welcome. Feel free to contact me on  -->
