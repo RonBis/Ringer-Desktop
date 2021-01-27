@@ -9,7 +9,7 @@ Desktop version of my __hobby project__ :grinning:  __*Ringer*__ made with Elect
     ```
     git clone https://github.com/RonBis/Ringer-Desktop.git
     ```
-3. Fire up your command line , followed by a `cd ringer-desktop` and you're all ready to go.
+3. Fire up your command line , followed by a `cd Ringer-Desktop` and you're all ready to go.
 4. Execute `npm install` to install the necessary dependencies.
 5. Wait until it install its dependencies. When finished, type 
     ```
