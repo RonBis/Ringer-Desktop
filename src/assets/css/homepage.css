@@ -1,0 +1,105 @@
+html{
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(60deg, #f79533, #ef4e7b, #5073b8) no-repeat center center fixed;
+    background-size: 100% 100%;
+    user-select: none;
+    font-family: 'Raleway';
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s cubic-bezier(0, 1.13, 0.9, 0.7);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  box-shadow: 0 0 0 30px #ffffff9c inset;
+  -webkit-box-shadow: 0 0 0 30px #ffffff9c inset;
+}
+
+#nav {
+    display: flex;
+    opacity: 1;
+    transition: opacity 0.25s cubic-bezier(0, 1.13, 0.9, 0.7);
+}
+
+#heading {font-weight: 300;font-size: 36px;margin: 0px;display: flex;}
+
+#l-icon {
+    margin-left: 12px;
+    background: url('./../images/paper-plane.png') no-repeat;
+    background-size: calc(76px * (63 / 100));
+    height: calc(76px * (63 / 100));
+    width: calc(76px * (63 / 100));
+}
+
+/*------------btn-------------*/
+.btn{
+    border: 0px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: rgb(0, 139, 255);
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 15px;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    outline: none;
+}
+.btn:active, .btn:hover {
+    background-color: rgb(0, 139 ,255);
+    color: #ffffff;
+    transition: 0.4s;
+    outline: none;
+    cursor: default;
+}
+
+#init-btn {
+    float: right;
+    display: block;
+    padding: 2px;
+    margin: 2px;
+    margin-left: 0px;
+    height: 12px;
+    width: 12px;
+    border-radius: 400%;
+    background: rgb(239, 255, 18);
+}
+
+#welcome-msg {
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    position: absolute;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 25px 0px;
+    width: clamp(236px, 1130px, 95%);
+    border-radius: 25px;
+    transition: opacity 0.5s ease-in, height 1s, width 1s cubic-bezier(.77,0,.18,1);
+}
+
+.type-1 {
+    word-spacing: 6px;
+    font-size: 21px;
+    font-weight: 200;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#auth-btn-wrapper{
+    position: relative;
+    margin: 0px calc(50% - 117px);
+    height: auto;
+    width: auto;
+    padding: 5px 10px 5px 10px;
+    display: flex;
+}

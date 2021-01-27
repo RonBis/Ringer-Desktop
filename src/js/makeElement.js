@@ -1,0 +1,3 @@
+function makeElement(attrMerged, willAppend){
+
+}

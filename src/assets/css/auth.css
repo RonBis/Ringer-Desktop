@@ -1,0 +1,57 @@
+.type-2-heading{
+    display: flex;
+    opacity: 0;
+    width: clamp(194px, 317px, 82%);
+    align-items: center;
+    margin: 0 auto;
+    font-size: clamp(20px, 6.5vw,40px);
+    font-weight: lighter;
+    transition: opacity 1s ease;
+}
+
+#heading-logo{
+    background: url('./../images/paper-plane.png') no-repeat;
+    background-size: clamp(20px, 6vw, 40px);
+    height: clamp(20px, 6vw, 40px);
+    width: clamp(20px, 6vw, 40px);
+    margin-left: 10px;
+}
+
+/*----------------auth-inputs---------------*/
+.input-container{
+    display: flex;
+    padding: 0px 4px;
+    align-items: center;
+    margin: 0 auto;
+    background: #ffffff9c;
+    border: none;
+    border-radius: 35px;
+    height: 43px;
+    width: clamp(194px, 317px, 82%);
+}
+
+.text-input{
+    opacity: 0;
+    height: 35px;
+    min-width: 0px;
+    padding: 0px 14px;
+    background: transparent;
+    border: none;
+    border-radius: inherit;
+    color: #676767;
+    font-size: 16px;
+    font-family: 'Raleway';
+    outline: none;
+    transition: opacity 0.5s ease;
+    flex: 1 0 100px;
+}
+
+#next-btn{
+    height: 35px;
+    /* width: 20px; */
+    background: tomato;
+    border-radius: 21px;
+    flex: 0 0 52px;
+    margin-left: 3px;
+    /* margin-right: 5px; */
+}
