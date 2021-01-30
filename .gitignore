@@ -1,8 +1,2 @@
-*.bak
-src/html/bg.svg
-src/assets/images/bg.svg
-src/assets/images/bglayer_2.webp
-src/assets/fonts/material-icons
-src/assets/font/Raleway
-ringer-desktop.png
+backups
 node_modules

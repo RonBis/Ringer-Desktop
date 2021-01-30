@@ -7,20 +7,20 @@
         <!-- <link rel="stylesheet" type="text/css" href="./../dist/bundle.css"> -->
     </head>
     <body>
-        <!-- <button class="foo-button mdc-button">
-            <div class="mdc-button__ripple"></div>
-            <span class="mdc-button__label">Button</span>
-        </button> -->
         <div id="full-styled-body">
             <div class="left-panel">
                 <div class="flex-nav" id="left-flex-nav">
-                    <span id="collapse-btn"></span>
+                    <div class="flex-nav-wrapper">
+                        <button class="material-icons-round icon-light ripple nav-button">keyboard_arrow_left</button>
+                        <button class="material-icons-round icon-light ripple nav-button">account_circle</button>
+                        <button class="material-icons-round icon-light ripple nav-button">settings</button>
+                    </div>
                 </div>
                 <div class="msg-explorer-panel-container" id="msg-explorer-panel-left-container">
                     <div class="msg-explorer-panel-wrapper" id="msg-explorer-panel-left-wrapper">
                         <div class="panel-heading-wrapper">
                             <p class="panel-header-text" id="msg-explorer-panel-header-text">Messages</p>
-                            <button class=""></button>
+                            <button class="material-icons-round icon-dark ripple" style="border-radius: 50%;height: 40px;width: 40px;">search</button>
                         </div>
                     </div>
                 </div>
@@ -33,5 +33,6 @@
     <script>
         document.getElementById('msg-explorer-panel-left-container').classList.add('flex-nav-visible')
     </script>
+    <script src="./../assets/css/ripple.js"></script>
     <!-- <script src="./../dist/bundle.js"></script> -->
 </html>

@@ -1,3 +1,7 @@
+@import './../fonts/open-sans/open-sans.css';
+@import './../fonts/material-icons/material-icons.css';
+@import './ripple.css';
+
 html,body{
     min-height:100%;
 }
@@ -10,6 +14,8 @@ body{
     height: 100%;
     width: 100%;
     font-family: 'Open Sans';
+    -webkit-user-select: none;
+    color: rgb(66 66 66);
 }
 .left-panel{
     flex: 0.9 0 0;
@@ -30,7 +36,6 @@ body{
     height: 100%;
     width: calc(100% - 70px);
     min-width: 238px;
-    max-width: 300px;
 }
 .msg-explorer-panel-wrapper{
     position: relative;
@@ -45,21 +50,42 @@ body{
 .flex-nav-hidden{
     margin-left: 0px;
 }
+.flex-nav-wrapper{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 90%;
+    width: 77%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.nav-button{
+    left: 50%;
+    margin-bottom: 10px;
+    font-size: 29px !important;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
 .msg-area{
     flex: 2 0 0;
-    background: #ffffffff;
+    background: #fff;
 }
 .panel-heading-wrapper{
     display: flex;
     height: max-content;
     width: 100%;
+    align-items: center;
     margin: 0px;
+    margin-bottom: 15px;
     padding: 0px 20px;
 }
 .panel-header-text{
     flex: 2 1 0;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 300;
     margin: 0;
-    margin-bottom: 15px;
 }
