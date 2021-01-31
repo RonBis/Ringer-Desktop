@@ -40,6 +40,7 @@ body{
 .msg-explorer-panel-wrapper{
     position: relative;
     display: flex;
+    flex-flow: column;
     top: 50%;
     height: 95%;
     transform: translateY(-50%);
@@ -70,14 +71,9 @@ body{
     border-radius: 50%;
     transform: translateX(-50%);
 }
-.msg-area{
-    flex: 2 0 0;
-    background: #fff;
-}
 .panel-heading-wrapper{
     display: flex;
     height: max-content;
-    width: 100%;
     align-items: center;
     margin: 0px;
     margin-bottom: 15px;
@@ -88,4 +84,29 @@ body{
     font-size: 24px;
     font-weight: 300;
     margin: 0;
+}
+.panel-subheader-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40px;
+}
+.tab{
+    height: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    flex: 1;
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+.tab:hover{
+    background: rgba(123, 123, 123, 0.529);
+    border-bottom: 3px solid black;
+}
+
+.msg-area{
+    flex: 2 0 0;
+    background: #fff;
 }
