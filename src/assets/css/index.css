@@ -105,8 +105,50 @@ body{
     background: rgba(123, 123, 123, 0.529);
     border-bottom: 3px solid black;
 }
+.tab:active, .tab:focus{
+    border-bottom: 3px solid #888888;
+}
 
-.msg-area{
+.msg-area-wrapper{
+    display: flex;
     flex: 2 0 0;
     background: #fff;
+}
+.msg-area{
+    display: flex;
+    flex-flow: column;
+    flex: 2 1 0;
+}
+.recipient-stats-header{
+    display: flex;
+    align-items: center;
+    background: tomato;
+    border-radius: 27px;
+    height: 48px;
+    width: 90%;
+    margin: 5px auto;
+}
+.recipient-info{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin: 5px;
+    padding: 0;
+    border-radius: inherit;
+}
+.avatar{
+    font-size: 41px;
+    margin-right: 20px;
+}
+.recipient-x{
+    height: 100%;
+}
+.recipient-name, .recipient-active-time{
+    font-family: 'Raleway';
+    margin: 0;
+    color: white;
+}
+.recipient-options-wrapper{
+    display: flex;
+    flex: 1 0.5 0;
 }
