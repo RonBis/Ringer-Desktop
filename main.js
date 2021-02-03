@@ -3,7 +3,15 @@ const { app, BrowserWindow, ipcMain } = require('electron')
 var mainWin = null
 
 function createMainWindow(){
-    mainWin = new BrowserWindow({ title: 'Ringer',icon: __dirname+'/src/assets/images/paper-plane.png', show: false, webPreferences: { contextIsolation: true, preload: __dirname+'/src/js/init_app.js', enableRemoteModule: false } })
+    mainWin = new BrowserWindow({
+        title: 'Ringer',icon: __dirname+'/src/assets/images/paper-plane.png',
+        show: false,
+        webPreferences: {
+            contextIsolation: true,
+            preload: __dirname+'/src/js/init_app.js',
+            enableRemoteModule: false
+        }
+    })
     mainWin.setMenu(null)
     mainWin.setMenuBarVisibility(null)
     mainWin.webContents.openDevTools()

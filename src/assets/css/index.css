@@ -13,6 +13,9 @@
     background: rgb(73,73,73);
     transition: .4s;
 }
+::placeholder{
+    color: white;
+}
 
 html,body{
     min-height: 100%;
@@ -22,7 +25,7 @@ body{
     margin: 0;
 }
 #full-styled-body{
-    -webkit-user-select: none;
+    user-select: none;
     color: rgb(66 66 66);
     display: flex;
     font-family: 'Open Sans';
@@ -127,7 +130,8 @@ body{
 
 .msg-area-wrapper{
     align-items: center;
-    background: white;
+    background: url('./../images/nature.webp') no-repeat;
+    background-size: cover;
     display: flex;
     flex: 2 0 0;
     flex-flow: column;
@@ -141,18 +145,19 @@ body{
 }
 .recipient-stats-header{
     align-items: center;
-    background: #7447ff;
+    /* background: #7447ff; */
+    backdrop-filter: blur(31px);
     border-radius: 27px;
     display: flex;
     height: 48px;
     margin: 5px;
+    padding: 0 5px;
     width: 90%;
 }
 .recipient-info{
     align-items: center;
     border-radius: inherit;
     display: flex;
-    margin: 5px;
     padding: 0;
 }
 .avatar{
@@ -179,7 +184,6 @@ body{
     display: flex;
     flex: 1 .5 0;
     justify-content: flex-end;
-    padding-right: 5px;
 }
 .recipient-action-button{
     border-radius: 50%;
@@ -194,11 +198,48 @@ body{
 }
 
 .input-box{
+    justify-content: space-evenly;
     align-items: center;
-    background: red;
+    /* background: #5044ff; */
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     display: flex;
-    height: 48px;
+    height: 52px;
     width: 90%;
+    padding-bottom: 5px;
+}
+.input-box-btn{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+.text-input{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    height: 90%;
+    /* background: white; */
+    /* border: 1px solid white; */
+    border-radius: 25px;
+    backdrop-filter: blur(50px);
+    padding: 0px 2px;
+}
+.chat-input{
+    flex: 1;
+    height: 80%;
+    background: transparent;
+    color: white;
+    padding-right: 15px;
+    font-family: 'Open Sans';
+    font-weight: lighter;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+#send-chat-btn{
+    margin-left: 10px;
+    border-radius: 50%;
+    height: 41px;
+    width: 41px;
+    backdrop-filter: brightness(0.5);
 }
