@@ -237,7 +237,8 @@ body{
 #send-chat-btn{
     margin-left: 10px;
     border-radius: 50%;
-    height: 41px;
-    width: 41px;
+    height: 44px;
+    width: 44px;
+    flex: 0 0 44px;
     backdrop-filter: brightness(0.5);
 }
