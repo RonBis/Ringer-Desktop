@@ -4,7 +4,10 @@ var mainWin = null
 
 function createMainWindow(){
     mainWin = new BrowserWindow({
-        title: 'Ringer',icon: __dirname+'/src/assets/images/paper-plane.png',
+        title: 'Ringer',
+        icon: __dirname+'/src/assets/images/paper-plane.png',
+        minWidth: 500,
+        minHeight: 330,
         show: false,
         webPreferences: {
             contextIsolation: true,
