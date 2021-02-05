@@ -3,23 +3,22 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="./../assets/css/index.css">
-        <link rel="stylesheet" type="text/css" href="./../assets/fonts/open-sans/open-sans.css">
-        <link rel="stylesheet" type="text/css" href="./../assets/fonts/raleway/raleway.css">
     </head>
     <body>
         <div id="full-styled-body">
-            <div class="left-panel">
-                <div class="flex-nav" id="left-flex-nav">
-                    <div class="flex-nav-wrapper">
-                        <button class="material-icons-round icon-light ripple nav-button">keyboard_arrow_left</button>
-                        <button class="material-icons-round icon-light ripple nav-button">account_circle</button>
-                        <button class="material-icons-round icon-light ripple nav-button">settings</button>
-                        <button class="material-icons-round icon-light ripple nav-button">dark_mode</button>
-                        <hr style="width: 90%;">
-                    </div>
+            <div class="flex-nav">
+                <div class="flex-nav-wrapper">
+                    <button class="material-icons-round icon-light ripple nav-button md-tooltip md-tooltip--right" id="collapse-msg-explorer" data-md-tooltip="Collapse message panel">keyboard_arrow_left</button>
+                    <button class="material-icons-round icon-light ripple nav-button">account_circle</button>
+                    <button class="material-icons-round icon-light ripple nav-button">settings</button>
+                    <button class="material-icons icon-light ripple nav-button">wallpaper</button>
+                    <button class="material-icons-round icon-light ripple nav-button">dark_mode</button>
+                    <hr style="width: 90%;">
                 </div>
+            </div>
+            <div class="left-panel" id="panel-left">
                 <div class="msg-explorer-panel-container" id="msg-explorer-panel-left-container">
-                    <div class="msg-explorer-panel-wrapper" id="msg-explorer-panel-left-wrapper">
+                    <div class="msg-explorer-panel-wrapper">
                         <div class="panel-heading-wrapper">
                             <p class="panel-header-text" id="msg-explorer-panel-header-text">Messages</p>
                             <button class="material-icons-round icon-dark ripple" style="border-radius: 50%;height: 40px;width: 40px; background: rgb(177, 177, 177);">search</button>
@@ -32,7 +31,7 @@
                     </div>
                 </div>
             </div>
-            <div class="msg-area-wrapper">
+            <div class="msg-area-wrapper" id="msg-area-wrapper">
                 <div class="recipient-stats-header">
                     <button class="recipient-info ripple">
                         <i class="material-icons-round icon-light avatar">account_circle</i>
@@ -55,7 +54,7 @@
                     <div class="text-input">
                         <button class="material-icons icon-light ripple input-box-btn">insert_emoticon</button>
                         <button class="material-icons icon-light ripple input-box-btn">attach_file</button>
-                        <input type="text" name="txt" class="chat-input" id="chat_text"  placeholder="Say something!">
+                        <input type="text" name="txt" class="chat-input" id="chat_text"  placeholder="Type something!">
                         <button class="material-icons icon-light ripple input-box-btn">mic</button>
                     </div>
                     <button class="material-icons icon-light ripple" id="send-chat-btn">send</button>
@@ -63,8 +62,7 @@
             </div>
         </div>
     </body>
-    <script>
-        document.getElementById('msg-explorer-panel-left-container').classList.add('flex-nav-visible')
-    </script>
+    <script src="./../js/window.js"></script>
     <script src="./../assets/css/ripple.js"></script>
+    <script src="./../js/events.js"></script>
 </html>

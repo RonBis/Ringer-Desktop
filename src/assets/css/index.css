@@ -1,8 +1,10 @@
 @import "./../fonts/open-sans/open-sans.css";
+@import "./../fonts/raleway/raleway.css";
 @import "./../fonts/material-icons/material-icons.css";
 @import "./ripple.css";
 
 ::-webkit-scrollbar{
+    height: 6px;
     width: 6px;
 }
 ::-webkit-scrollbar-thumb{
@@ -30,29 +32,30 @@ body{
     display: flex;
     font-family: 'Open Sans';
     height: 100%;
-    overflow-y: hidden;
     width: 100%;
+    overflow-y: hidden;
+    background: url('./../images/nature.webp') no-repeat;
+    background-size: cover;
 }
 
 .left-panel{
     background:  #e8e8e8f2;
     flex: .9 0 0;
+    opacity: 1;
+    transition: opacity .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .flex-nav{
     background: #7c4dc9;
-    border-bottom-right-radius: 25px;
-    border-top-right-radius: 25px;
-    display: flex;
-    height: 95%;
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 70px;
+    height: 100%;
+    min-width: 60px;
+    transform: translateY(0%);
 }
 .msg-explorer-panel-container{
     height: 100%;
     min-width: 238px;
-    width: calc(100% - 70px);
+}
+#msg-explorer-panel-left-container-hidden{
+    display: none;
 }
 .msg-explorer-panel-wrapper{
     display: flex;
@@ -62,22 +65,17 @@ body{
     top: 50%;
     transform: translateY(-50%);
 }
-.flex-nav-visible{
-    margin-left: 70px;
-}
-.flex-nav-hidden{
-    margin-left: 0;
-}
 .flex-nav-wrapper{
-    display: flex;
-    flex-direction: column;
-    height: 90%;
-    justify-content: flex-start;
-    left: 50%;
     position: fixed;
     top: 50%;
-    transform: translate(-50%,-50%);
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     width: 77%;
+    margin: 12px 0px;
+    justify-content: flex-start;
+    transform: translate(-50%,-50%);
 }
 .nav-button{
     border-radius: 50%;
@@ -130,8 +128,8 @@ body{
 
 .msg-area-wrapper{
     align-items: center;
-    background: url('./../images/nature.webp') no-repeat;
-    background-size: cover;
+    /* background: url('./../images/nature.webp') no-repeat;
+    background-size: cover; */
     display: flex;
     flex: 2 0 0;
     flex-flow: column;
