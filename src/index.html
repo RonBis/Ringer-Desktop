@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="./../assets/css/index.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/index.css">
     </head>
     <body>
         <div id="full-styled-body">
@@ -45,9 +45,15 @@
                         <button class="material-icons-round icon-light ripple recipient-action-button">more_vert</button>
                     </div>
                 </div>
-                <div class="msg-area">
-                    <div class="texting-area">
-                        <p class="chattext"></p> 
+                <div class="msg-area" id="msg-area">
+                    <div class="texting-area" id="texting-area">
+                        <!-- <div class="chattext">
+                            <div class="sender"></div>
+                            <div class="message-container">
+                                <div class="message"></div>
+                                <div class="time"></div>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="input-box">
@@ -62,7 +68,9 @@
             </div>
         </div>
     </body>
-    <script src="./../js/window.js"></script>
-    <script src="./../assets/css/ripple.js"></script>
-    <script src="./../js/events.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/window.js"></script>
+    <script src="assets/css/ripple.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/app.js"></script>
 </html>
