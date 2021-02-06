@@ -193,8 +193,36 @@ body{
     background: transparent;
     display: flex;
     flex-flow: column;
+    padding: 5px;
 }
-
+.chattext{
+    /* background: #7c4dc9; */
+    display: flex;
+    flex-flow: column;
+    backdrop-filter: brightness(0.4);
+    color: white;
+    width: max-content;
+    padding: 5px 10px;
+    margin: 0px 10px 5px 0px;
+    border-radius: 10px;
+}
+.sender{
+    height: 20px;
+    width: 20px;
+    align-items: center;
+    font-size: small;
+}
+.message-container{
+    display: flex;
+    flex: 2;
+    align-items: center;
+    font-size: 15px;
+}
+.time{
+    font-size: small;
+    margin-left: 10px;
+    color: rgb(172, 172, 172);
+}
 .input-box{
     justify-content: space-evenly;
     align-items: center;

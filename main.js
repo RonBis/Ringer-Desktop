@@ -18,7 +18,8 @@ function createMainWindow(){
     mainWin.setMenu(null)
     mainWin.setMenuBarVisibility(null)
     mainWin.webContents.openDevTools()
-    mainWin.loadFile('./src/html/index.html')
+    // mainWin.loadFile('./src/index.html')
+    mainWin.loadURL('http://localhost:3000')
     mainWin.on('ready-to-show', () => { mainWin.show() })
     console.log('Exiting createMainWindow() function')
 }
