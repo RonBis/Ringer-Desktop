@@ -148,7 +148,7 @@ body{
     border-radius: 27px;
     display: flex;
     height: 48px;
-    margin: 5px;
+    margin-top: 5px;
     padding: 0 5px;
     width: 90%;
 }
@@ -190,9 +190,9 @@ body{
 }
 
 .texting-area{
-    background: transparent;
-    display: flex;
-    flex-flow: column;
+    /* background: transparent; */
+    /* display: flex; */
+    /* flex-flow: column; */
     padding: 5px;
 }
 .chattext{
@@ -207,6 +207,7 @@ body{
     border-radius: 10px;
 }
 .sender{
+    color: #32e9b2;
     height: 20px;
     width: 20px;
     align-items: center;
@@ -221,6 +222,7 @@ body{
 .time{
     font-size: small;
     margin-left: 10px;
+    align-self: flex-end;
     color: rgb(172, 172, 172);
 }
 .input-box{
@@ -230,7 +232,7 @@ body{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     display: flex;
-    height: 52px;
+    height: 48px;
     width: 90%;
     padding-bottom: 5px;
 }
@@ -243,7 +245,7 @@ body{
     display: flex;
     flex: 1;
     align-items: center;
-    height: 90%;
+    height: 100%;
     /* background: white; */
     /* border: 1px solid white; */
     border-radius: 25px;

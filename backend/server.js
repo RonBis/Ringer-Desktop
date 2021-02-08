@@ -1,6 +1,7 @@
 const path = require('path')
 const http = require('http')
 const express = require('express')
+const mysql = require('mysql')
 const socketio = require('socket.io')
 const formatMessage = require('./msg')
 
@@ -9,6 +10,24 @@ const server = http.createServer(app)
 const io = socketio(server)
 const PORT = 3000 || process.env.PORT
 const botname = 'RingerBot'
+
+const dbConn = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: 'ronilbiswas8937',
+    database: 'ringer',
+})
+//establish connection with mysql db
+dbConn.connect((err) => {
+    if(err){
+        console.log('Couldn\'t connect to database : '+err)
+        return
+    }
+    console.log('Database connection established')
+})
+dbConn.end((err) => {
+    console.log('Database disconnected')
+})
 
 //set static folder
 app.use(express.static(path.join(__dirname, '../src')))
